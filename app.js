@@ -45,7 +45,7 @@ productsDiv.addEventListener("click", (event) => {
             //Cart
             calculateCartPrice();
         } else {
-            if (confirm("Are you sure product will be removed?")) {
+            if (confirm(`Are you sure ${event.target.parentElement.parentElement.children[0].innerText} will be removed?`)) {
                 //remove
                 event.target.parentElement.parentElement.parentElement.remove();
                 // index.html sayfasında;
